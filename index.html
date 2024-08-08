@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>facebook-clone</title>
+        <link rel="icon" type="icon" href="./assets/img/Facebook logo.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <style>
+                body::-webkit-scrollbar {
+                        display: none;
+                }
+
+                #left-column::-webkit-scrollbar {
+                        display: none;
+                }
+
+                #mid-column::-webkit-scrollbar {
+                        display: none;
+                }
+                #stories:hover{
+                        opacity: 70%;
+                        transform: scale(1.02);
+                }
+
+        </style>
+
+
+</head>
+
+<body class="bg-light">
+        <!------------------------------------------------top nav bar--------------------------------------------------------->
+        <span class="row shadow-sm p-2 " style="background-color: white;">
+
+                <span class="col-sm-3 d-flex  ">
+                        <img src="./assets/img/Facebook logo.png" alt="facebook" style="height:40px; width:40px;"
+                                class="rounded-circle mx-3">&nbsp;
+                        <input class="form-control" placeholder="search" type="text" style="border-radius: 60px;">
+
+                </span>
+                <span class="col-sm-6 d-flex justify-content-center mt-1">
+                        <a class="nav-item px-5 " href="#"><img src="./assets/img/HOME-1.png"
+                                        style="height: 40px;width:60px" class="rounded-circle"></a>
+                        <a class="nav-item px-5 " href="#"><img src="./assets/img/VIDEO-1.png"
+                                        style="height: 40px;width:40px" class="rounded-circle"></a>
+                        <a class="nav-item px-5 " href="#"><img src="./assets/img/marketplace-1.png"
+                                        style="height: 40px;width:60px" class="rounded-circle"></a>
+                        <a class="nav-item  px-5" href="#"><img src="./assets/img/groups-1.png"
+                                        style="height: 40px;width:50px" class="rounded-circle"></a>
+                        <a class="nav-item  px-5" href="#"><img src="./assets/img/gamepad-1.png"
+                                        style="height: 40px;width:60px" class="rounded-circle"></a>
+                </span>
+                <span class="col-sm-3 d-flex justify-content-end mt-1">
+                        <a class="nav-item px-3 " href="#"><img src="./assets/img/menu.webp"
+                                        style="height: 25px;width:28px;"></a>
+                        <a class="nav-item px-3 " href="#"><img src="./assets/img/messenger.jpeg"
+                                        style="height: 25px;width:28px" class="rounded-circle"></a>
+                        <a class="nav-item px-3 " href="#"><img src="./assets/img/bell.jpeg"
+                                        style="height: 25px;width:28px" class="rounded-circle"></a>
+                        <a class="nav-item px-3 " href="#"><img src="./assets/img/aravind-fb.jpeg"
+                                        style="height: 30px;width:30px" class="rounded-circle"></a>
+
+                </span>
+        </span>
+        <!----------------------------------------------------left colum------------------------------------------------------------------->
+
+        <div class="row mt-4 ms-1">
+                <div class="col-sm-3 " style="height: 630px; overflow-y: scroll;" id="left-column">
+                        <table class="table table-borderless table-hover bg-light">
+                                <tr title="">
+                                        <td class="bg-light"><img src="./assets/img/aravind-fb.jpeg"
+                                                        style="height: 40px; width: 40px;" class="rounded-circle">
+                                                Aravind</td>
+                                </tr>
+                                <tr title="friends">
+                                        <td class="bg-light"><img src="./assets/img/fbfriends.png" style="height: 30px; width: 30px;"
+                                                        class="rounded-circle">Friends</td>
+                                </tr>
+                                <tr title="Memories">
+                                        <td class="bg-light"><img src="./assets/img/memories.jpeg"
+                                                        style="height: 40px; width: 40px;"
+                                                        class="rounded-circle">Memories</td>
+                                </tr>
+                                <tr title="Saved">
+                                        <td class="bg-light"><img src="./assets/img/saved.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Saved
+                                        </td>
+                                </tr>
+                                <tr title="Groups">
+                                        <td class="bg-light"><img src="./assets/img/groups.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Groups
+                                        </td>
+                                </tr>
+                                <tr title="Video">
+                                        <td class="bg-light"><img src="./assets/img/video.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Video
+                                        </td>
+                                </tr>
+                                <tr title=" marketplace">
+                                        <td class="bg-light"><img src="./assets/img/marketplace.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Market
+                                                Place</td>
+                                </tr>
+                                <tr title="feeds">
+                                        <td class="bg-light"><img src="./assets/img/feeds.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Feeds
+                                        </td>
+                                </tr>
+                                <tr title="events">
+                                        <td class="bg-light"><img src="./assets/img/events.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Events
+                                        </td>
+                                </tr>
+                                <tr title="Activity">
+                                        <td class="bg-light"><img src="./assets/img/activity.png" style="height: 30px; width: 30px;"
+                                                        class="rounded-circle">Ads
+                                                Manager</td>
+                                </tr>
+                                <tr title=" Crisis Response">
+                                        <td class="bg-light"><img src="./assets/img/radar.png"
+                                                        style="height: 30px; width: 40px;" class="rounded-circle">Crisis
+                                                Response</td>
+                                </tr>
+                                <tr title="climate science center">
+                                        <td class="bg-light"><img src="./assets/img/plant.png" style="height: 30px; width: 30px;"
+                                                        class="rounded-circle">
+                                                Climate Science Centre</td>
+                                </tr>
+                                <tr title=" facebook pay">
+                                        <td class="bg-light"><img src="./assets/img/pay.png" style="height: 30px; width: 30px;" class="rounded-circle">Facebook pay</td>
+                                </tr>
+                                <tr title="fund raisers">
+                                        <td class="bg-light"><img src="./assets/img/fundraisers.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">
+                                                Fundraisers</td>
+                                </tr>
+                                <tr title="gaming">
+                                        <td class="bg-light"><img src="./assets/img/gaming video.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Gaming
+                                                Video</td>
+                                </tr>
+                                <tr title="messenger">
+                                        <td class="bg-light"><img src="./assets/img/messenger (2).jpeg"
+                                                        style="height: 30px; width: 30px;"
+                                                        class="rounded-circle">Messenger</td>
+                                </tr>
+                                <tr title=" messenger kids">
+                                        <td class="bg-light"><img src="./assets/img/kmsg.png" style="height: 30px; width: 30px;"
+                                                        class="rounded-circle">Messenger Kids</td>
+                                </tr>
+                                <tr title=" pages">
+                                        <td class="bg-light"><img src="./assets/img/pages.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Pages
+                                        </td>
+                                </tr>
+                                <tr title="Games">
+                                        <td class="bg-light"><img src="./assets/img/playgames.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Play
+                                                Games</td>
+                                </tr>
+                                <tr title=" add activity">
+                                        <td class="bg-light"><img src="./assets/img/ennavo.png"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">Recent
+                                                Add Activity</td>
+                                </tr>
+                                <tr>
+                                        <td class="bg-light"><img src="./assets/img/see-1.jpeg"
+                                                        style="height: 30px; width: 30px;" class="rounded-circle">See
+                                                Less</td>
+                                </tr>
+                        </table>
+                </div>
+                <!----------------------------------------------------------------mid-column----------------------------------------------------------------->
+                <!-----------------------------------------------------------------carousal---------------------------------->
+                <div class="col-sm-6 " style="background-attachment: fixed; overflow-y: scroll;height: 630px;"
+                        id="mid-column">
+                        <div class="row">
+                                <div class="container " style="height:300px; width: 750px;">
+
+                                        <div id="story" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                                <div
+                                                                        class="cards-wrapper d-flex justify-content-center">
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/story.png); background-size: cover; ">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/symposium.jpeg); background-size: cover;">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/munna.jpeg); background-size: cover;">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/chiku.jpeg); background-size: cover;">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                                <div
+                                                                        class="cards-wrapper d-flex justify-content-center">
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/aravind-fb-2.jpeg); background-size: cover;">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/aravind-fb-2.jpeg); background-size: cover;">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/aravind-fb-2.jpeg); background-size: cover;">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="card rounded mx-1" id="stories"
+                                                                                style="height: 300px;width: 200px; background-image: url(./assets/img/aravind-fb-2.jpeg); background-size: cover;">
+                                                                                <div class="card-body rounded">
+                                                                                        <p class="card-text">
+                                                                                                Create Story</p>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                
+                                                <button class="carousel-control-prev bg-light rounded-circle" style="height: 40px; width:40px;margin-top: 145px;" type="button"
+                                                        data-bs-target="#story" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon icon-light"></span>
+
+                                                </button>
+                                                <button class="carousel-control-next bg-light rounded-circle" style="height: 40px; width:40px;margin-top: 145px;" type="button"
+                                                        data-bs-target="#story" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon"></span>
+
+                                                </button>
+                                        </div>
+
+                                </div>
+                        </div>
+                        <!----------------------------------------------------------2nd box------------------------------------------------------------------>
+                        <div class="row">
+                                <div class="container m-4 rounded justify-content-center shadow-sm"
+                                        style="height:120px; width: 730px; background-color: rgb(255, 255, 255);">
+
+                                        <div class="d-flex">
+                                                <img src="./assets/img/aravind-fb.jpeg"
+                                                        style="height: 40px; width: 40px;" class="rounded-circle">
+                                                <forms class="form-control mx-3 mt-2 " style="border-radius: 60px;">
+                                                        <input type="text" id="text"
+                                                                placeholder="Whats on your mind,Aravind?"
+                                                                style="width:600px; border:0px;">
+
+                                                </forms>
+                                        </div>
+                                        <div class="row  d-flex  m-3">
+
+                                                <span class="col-sm-4 "><img src="./assets/img/livevideo.jpeg" alt=""
+                                                                style="height: 30px; width: 30px;"
+                                                                class=" rounded-circle ">&nbsp;&nbsp;Live Video
+                                                </span>
+                                                <span class="col-sm-4"> <img src="./assets/img/photo.jpeg" alt=""
+                                                                style="height: 30px; width: 30px;"
+                                                                class="rounded-circle">
+                                                        &nbsp;&nbsp;Photo/video</span>
+                                                <span class="col-sm-4"><img src="./assets/img/feeling.jpeg" alt=""
+                                                                style="height: 30px; width: 30px;"
+                                                                class="rounded-circle">&nbsp;&nbsp;Feeling/Activity
+                                                </span>
+
+
+
+
+
+                                        </div>
+
+                                </div>
+                                <!---------------------------------------------------------------------------------1st post---------------------------------------------------------------------------->
+                                <div class="row-sm">
+
+                                        <div class="container mt-3">
+                                                <div class="card card-dismissable shadow-sm" style="width: 730px; height: 1500px;">
+                                                        <div class="card-header  ">
+                                                                <div class="row-1 d-flex">
+                                                                        <img src="./assets/img/sunset.jpg"
+                                                                                alt=""
+                                                                                style="height: 30px; width: 30px;"
+                                                                                class="rounded-circle me-2">
+                                                                        <h5 class="me-auto mt-1">Nature</h5>
+                                                                        <img src="./assets/img/threedot-1.jpg" alt=""
+                                                                                style="height: 30px; width: 30px;"
+                                                                                class="rounded-circle me-2">
+                                                                        <button type="button" class="btn-close mt-1"
+                                                                                data-bs-dismiss="card"
+                                                                                ></button>
+                                                                </div>
+                                                                <div class="row-1 d-flex">
+
+                                                                        <p> The sky takes on shades of orange during sunrise and sunset. The color that gives you hope that the sun will set only to rise again.
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="card-body">
+                                                                <video width: 100%; height: 700px;
+                                                                class="card-img-top" alt="" controls>>
+                                                                <source src="./assets/img/post-video.mp4"></video>
+                                                                
+                                                                <div class="row-sm-1 d-flex">
+                                                                        <div class="col-sm-8"><img
+                                                                                        src="./assets/img/likesandreact.png"
+                                                                                        style="height: 40px;width: 100p;"
+                                                                                        alt=""></div>
+                                                                        <div class="col-sm-4 align-items-end">
+                                                                                <p>10.k comments &nbsp;&nbsp;1M Shares
+                                                                                </p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                                <div class="row-1 d-flex">
+                                                                        <div class="col-sm-4 px-5"><button
+                                                                                        class="btn"><img
+                                                                                                src="./assets/img/like.1.jpeg"
+                                                                                                alt=""
+                                                                                                style="height:30px;width:30px;">
+                                                                                        Like</button></div>
+                                                                        <div class="col-sm-4 px-5"><button
+                                                                                        class="btn"><img
+                                                                                                src="./assets/img/comment.jpeg"
+                                                                                                alt=""
+                                                                                                style="height:30px;width:30px;">Comment</button>
+                                                                        </div>
+                                                                        <div class="col-sm-4 px-5"><button
+                                                                                        class="btn"><img
+                                                                                                src="./assets/img/share.jpeg"
+                                                                                                alt=""
+                                                                                                style="height:40px;width:40px;"
+                                                                                                class="rounded-circle">Share</button>
+                                                                        </div>
+                                                                </div>
+
+                                                        </div>
+                                                </div>
+                                        </div>
+
+
+                                </div>
+                        </div>
+
+
+                        <!---------------------------------------------------------------------------------2nd post---------------------------------------------------------------------------->
+                        <div class="row-sm">
+
+                                <div class="container mt-4">
+                                        <div class="card ms-1 shadow-sm" style="width: 730px; height: 950px;">
+                                                <div class="card-header  ">
+                                                        <div class="row-1 d-flex">
+                                                                <img src="./assets/img/chennithottam.png" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <h5 class="me-auto mt-1">Chennithottam</h5>
+                                                                <img src="./assets/img/threedot-1.jpg" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <button type="button" class="btn-close mt-1"
+                                                                        data-bs-dismiss="card"
+                                                                        ></button>
+                                                        </div>
+                                                        <div class="row-1 d-flex">
+
+                                                                <p> "On a riverside, under the embrace of the
+                                                                        sun, time slows, and the gentle whisper
+                                                                        of the water carries away all worries."
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <img src="./assets/img/post-1.jpg"
+                                                                style="width: 100%; height: 700px;" class="card-img-top"
+                                                                alt="">
+                                                        <div class="row-sm-1 d-flex">
+                                                                <div class="col-sm-8"><img
+                                                                                src="./assets/img/likesandreact.png"
+                                                                                style="height: 40px;width: 100p;"
+                                                                                alt=""></div>
+                                                                <div class="col-sm-4 align-items-end">
+                                                                        <p>10.k comments &nbsp;&nbsp;1M Shares
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                        <div class="row-1 d-flex">
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/like.1.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">
+                                                                                Like</button></div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/comment.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">Comment</button>
+                                                                </div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/share.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:40px;width:40px;"
+                                                                                        class="rounded-circle">Share</button>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        <!---------------------------------------------------------------------------------3rd post---------------------------------------------------------------------------->
+                        <div class="row-sm">
+
+                                <div class="container mt-4">
+                                        <div class="card ms-1 shadow-sm" style="width: 730px; height: 710px;">
+                                                <div class="card-header  ">
+                                                        <div class="row-1 d-flex">
+                                                                <img src="./assets/img/virat-dp.webp" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <h5 class="me-auto mt-1">Virat Kohli Fan Page</h5>
+                                                                <img src="./assets/img/threedot-1.jpg" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <button type="button" class="btn-close mt-1"
+                                                                        data-bs-dismiss="card"
+                                                                        aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="row-1 d-flex">
+
+                                                                <p> therapy is expensive... so i watc virat kohli play <span STYLE="color: rgb(12, 91, 237);">#king #virat #GOAT</span>
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <iframe width="700" height="465" src="https://www.youtube.com/embed/8tziTc4aZJI?si=3is9pKIegiOnDn9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                        <div class="row-sm-1 d-flex">
+                                                                <div class="col-sm-8"><img
+                                                                                src="./assets/img/likesandreact.png"
+                                                                                style="height: 40px;width: 100p;"
+                                                                                alt=""></div>
+                                                                <div class="col-sm-4 align-items-end">
+                                                                        <p>10.k comments &nbsp;&nbsp;1M Shares
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                        <div class="row-1 d-flex">
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/like.1.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">
+                                                                                Like</button></div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/comment.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">Comment</button>
+                                                                </div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/share.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:40px;width:40px;"
+                                                                                        class="rounded-circle">Share</button>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        <!---------------------------------------------------------------------------------4th post---------------------------------------------------------------------------->
+                        <div class="row-sm">
+
+                                <div class="container mt-4">
+                                        <div class="card ms-1 shadow-sm" style="width: 730px; height: 1050px;">
+                                                <div class="card-header  ">
+                                                        <div class="row-1 d-flex">
+                                                                <img src="./assets/img/idiots.jpeg" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <h5 class="me-auto mt-1">3 Idiots</h5>
+                                                                <img src="./assets/img/threedot-1.jpg" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <button type="button" class="btn-close mt-1"
+                                                                        data-bs-dismiss="card"
+                                                                        aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="row-1 d-flex">
+
+                                                                <p>"A triangle is the strongest shape in geometry. Just like our friendship." – Unknown
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <img src="./assets/img/idiots.jpeg"
+                                                                style="width: 100%; height: 800px;" class="card-img-top"
+                                                                alt="">
+                                                        <div class="row-sm-1 d-flex">
+                                                                <div class="col-sm-8"><img
+                                                                                src="./assets/img/likesandreact.png"
+                                                                                style="height: 40px;width: 100p;"
+                                                                                alt=""></div>
+                                                                <div class="col-sm-4 align-items-end">
+                                                                        <p>10.k comments &nbsp;&nbsp;1M Shares
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                        <div class="row-1 d-flex">
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/like.1.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">
+                                                                                Like</button></div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/comment.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">Comment</button>
+                                                                </div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/share.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:40px;width:40px;"
+                                                                                        class="rounded-circle">Share</button>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        <!---------------------------------------------------------------------------------5th post---------------------------------------------------------------------------->
+                        <div class="row-sm">
+
+                                <div class="container mt-4">
+                                        <div class="card ms-1 shadow-sm" style="width: 730px; height: 950px;">
+                                                <div class="card-header  ">
+                                                        <div class="row-1 d-flex">
+                                                                <img src="./assets/img/chennithottam.png" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <h5 class="me-auto mt-1">Chennithottam</h5>
+                                                                <img src="./assets/img/threedot-1.jpg" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <button type="button" class="btn-close mt-1"
+                                                                        data-bs-dismiss="card"
+                                                                        aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="row-1 d-flex">
+
+                                                                <p> "On a riverside, under the embrace of the
+                                                                        sun, time slows, and the gentle whisper
+                                                                        of the water carries away all worries."
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <img src="./assets/img/post-1.jpg"
+                                                                style="width: 100%; height: 700px;" class="card-img-top"
+                                                                alt="">
+                                                        <div class="row-sm-1 d-flex">
+                                                                <div class="col-sm-8"><img
+                                                                                src="./assets/img/likesandreact.png"
+                                                                                style="height: 40px;width: 100p;"
+                                                                                alt=""></div>
+                                                                <div class="col-sm-4 align-items-end">
+                                                                        <p>10.k comments &nbsp;&nbsp;1M Shares
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                        <div class="row-1 d-flex">
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/like.1.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">
+                                                                                Like</button></div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/comment.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">Comment</button>
+                                                                </div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/share.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:40px;width:40px;"
+                                                                                        class="rounded-circle">Share</button>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        <!---------------------------------------------------------------------------------6th post---------------------------------------------------------------------------->
+                        <div class="row-sm">
+
+                                <div class="container mt-4">
+                                        <div class="card ms-1 shadow-sm" style="width: 730px; height: 950px;">
+                                                <div class="card-header  ">
+                                                        <div class="row-1 d-flex">
+                                                                <img src="./assets/img/chennithottam.png" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <h6 class="me-auto mt-1">Chennithottam</h6>
+                                                                <img src="./assets/img/threedot-1.jpg" alt=""
+                                                                        style="height: 30px; width: 30px;"
+                                                                        class="rounded-circle me-2">
+                                                                <button type="button" class="btn-close mt-1"
+                                                                        data-bs-dismiss="card"
+                                                                        aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="row-1 d-flex">
+
+                                                                <p> "On a riverside, under the embrace of the
+                                                                        sun, time slows, and the gentle whisper
+                                                                        of the water carries away all worries."
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="card-body">
+                                                        <img src="./assets/img/post-1.jpg"
+                                                                style="width: 100%; height: 700px;" class="card-img-top"
+                                                                alt="">
+                                                        <div class="row-sm-1 d-flex">
+                                                                <div class="col-sm-8"><img
+                                                                                src="./assets/img/likesandreact.png"
+                                                                                style="height: 40px;width: 100p;"
+                                                                                alt=""></div>
+                                                                <div class="col-sm-4 align-items-end">
+                                                                        <p>10.k comments &nbsp;&nbsp;1M Shares
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                        <div class="row-1 d-flex">
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/like.1.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">
+                                                                                Like</button></div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/comment.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:30px;width:30px;">Comment</button>
+                                                                </div>
+                                                                <div class="col-sm-4 px-5"><button class="btn"><img
+                                                                                        src="./assets/img/share.jpeg"
+                                                                                        alt=""
+                                                                                        style="height:40px;width:40px;"
+                                                                                        class="rounded-circle">Share</button>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        <div class="row">
+                               
+                                        <!-- <button class="btn btn-light mx-auto mt-5 text-muted"> -->
+                                                <span class="spinner-border spinner-border-lg mx-auto mt-5 text-muted"></span >
+                                              
+                                              <!-- </button> -->
+                                              
+                        
+                        </div>
+                </div>
+                <!----------------------------------------------------------------------end-column------------------------------------------------------------------>
+                <div class="col-sm-3" style="overflow-y: scroll; height: 630px;">
+                        <div class="row ps-4">
+                                <div class="container " style="height: 350px;">
+                                        <table class="table table-borderless table-hover ps-4 ">
+                                                <thead>
+                                                        <h6 class="text-muted">Sponsered</h6>
+                                                </thead>
+                                                <tbody>
+                                                        <tr class=" d-flex">
+                                                                <td class="bg-light"> <img
+                                                                                src="./assets/img/ateam.jpeg"
+                                                                                style="height:130px;width:130px;" alt=""
+                                                                                class=" rounded mt-2"> </td>
+                                                                <td class="bg-light">
+                                                                        <p class="mt-4">Upgrade your skills now !!</p>
+                                                                        <small class="text-muted mb-3">ateam.com</small>
+                                                                </td>
+                                                        </tr>
+                                                        <tr class="d-flex">
+                                                                <td class="bg-light"> <img
+                                                                                src="./assets/img/mrf.jpeg"
+                                                                                style="height:130px;width:130px;" alt=""
+                                                                                class=" rounded mt-2"> </td>
+                                                                <td class="bg-light">
+                                                                        <p class="mt-4">You can bet on it,if its MRF</p>
+                                                                        <small class="text-muted mb-3">mrfco.com</small>
+                                                                </td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+
+                                </div>
+                        </div>
+                        <hr>
+                        <!------------------------------------------------------------------------------------friend-request------------------------------------------------------------------------->
+                        <div class="row ps-4">
+                                <div class="container">
+                                        <table class="table table-borderless table-hover">
+                                                <thead class="d-flex">
+                                                        <span class="text-muted pe-5" style="font-weight: 500;">Friend
+                                                                Requests</span>
+                                                        <a href="#" class="ps-5">see more</a>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td class="bg-light">
+                                                                        <div class="row d-flex">
+                                                                                <div class="col-sm-2">
+                                                                                        <img src="./assets/img/kashmira.jpeg"
+                                                                                                alt=""
+                                                                                                style="height:60px;width: 60px;"
+                                                                                                class="rounded-circle">
+                                                                                </div>
+                                                                                <div class="col-sm-10 ">
+                                                                                        <div class="row-sm-1 ps-3">
+                                                                                                <span style="font-weight: 500; "
+                                                                                                        class="mt-1">Kashmira
+                                                                                                        Pardesi</span class="badge"><img src="./assets/img/verified.png" alt="" class="rounded-circle" style="height: 15px; width:18px"><span></span><br>
+                                                                                                <small>2 mutual</small>
+                                                                                        </div>
+                                                                                        <div class="row-sm-1 ps-3">
+                                                                                                <button class="btn btn-primary"
+                                                                                                        style="width: 45%;">Confirm</button>
+                                                                                                <button class="btn btn-secondary"
+                                                                                                        style="width: 45%;">delete</button>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+                        </div>
+                        <hr>
+                        <!-----------------------------------------------------------------------------------------------------birthday------------------------------------------------------------------------------------>
+                        <div class="row ps-4">
+                                <table class="table table-borderless table-hover">
+                                        <thead>
+                                                <p style="font-weight: 500;">Birthdays</p>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td class="d-flex bg-light"><img src="./assets/img/gift.jpeg"
+                                                                        style=" height:40px; width:40px;"
+                                                                        class="rounded-circle" alt="">
+                                                                &nbsp;&nbsp;<p class="mt-1"><span
+                                                                                style="font-weight: 500;">George's
+                                                                        </span>birthday is today</p>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                        <hr>
+                        <!----------------------------------------------------------------------------------------------------------------------contacts------------------------------------------------------------------------------------------->
+                        <div class="row ps-4">
+                                <table class="table table-borderless table-hover">
+                                        <thead class="d-flex">
+                                                <div class="row">
+                                                        <div class="col-sm-10">
+                                                                <span class="text-muted"
+                                                                        style="font-weight: 500;">Contacts</span>
+                                                        </div>
+                                                        <div class="col-sm-1"> <i class="fa-solid fa-magnifying-glass"
+                                                                        style="color: #69686a; " class=""></i></div>
+                                                        <div class="col-sm-1"> <i class="fa-solid fa-ellipsis"
+                                                                        style="color: #616365;"></i></div>
+
+                                                </div>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td class="bg-light"><img src="./assets/img/aruns.png"
+                                                                        style="height: 30px; width: 30px;font-weight: 900;"
+                                                                        class="rounded-circle">&nbsp; &nbsp;Arun
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="bg-light"><img src="./assets/img/aruns.png"
+                                                                        style="height: 30px; width: 30px;font-weight:100;"
+                                                                        class="rounded-circle">&nbsp; &nbsp;Arun
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="bg-light"><img src="./assets/img/aruns.png"
+                                                                        style="height: 30px; width: 30px;font-weight: 900;"
+                                                                        class="rounded-circle">&nbsp; &nbsp;Arun
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="bg-light"><img src="./assets/img/aruns.png"
+                                                                        style="height: 30px; width: 30px;font-weight: 900;"
+                                                                        class="rounded-circle">&nbsp; &nbsp;Arun
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="bg-light"><img src="./assets/img/aruns.png"
+                                                                        style="height: 30px; width: 30px;font-weight: 900;"
+                                                                        class="rounded-circle">&nbsp; &nbsp;Arun
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                        <hr>
+                        <!-------------------------------------------------------------------------------------------group-conv------------------------------------------------------------------------------------------------>
+                        <div class="row ps-4">
+                                <table class="table table-borderless table-hover">
+                                        <thead>
+                                                <h6 class="text-muted">Group Conversations</h6>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td class="d-flex bg-light">
+                                                                <i class="fa-solid fa-plus rounded-circle pt-2"
+                                                                        style="color: #777879;"></i>
+                                                                <p class=" ps-2">create group</p>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                </div>
+
+
+        </div>
+
+</body>
+
+</html>
